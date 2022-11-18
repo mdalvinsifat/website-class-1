@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient(100deg,#3a3cea,#4963d7);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navber  */
+.navber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navber-logo{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.navber-logo img{
+    width:100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    outline: 1px solid white;
+    outline-offset: 5px;
+}
+.navber-text a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+.navber-login-btn a{
+    text-decoration: none;
+    color:black;
+    margin-right: 50px;
+    background-color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* home design  */
+.Home{
+    background-color: #6063ea78;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    margin-top: 20px;
+}
+.Home-Image{
+    background-image: url(/image-web-development/background-image.png);
+    width: 50%;
+    height: 70vh;
+    top: 80px;
+    position: absolute;
+    left: 400px;
+    animation-name: kalao;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    margin-left: 100px;
+}
+@keyframes kalao{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+}
+.home-text{
+    position: absolute;
+    left: 70px;
+    top: 200px;
+    text-align: center;
+}
+.home-text h3{
+    letter-spacing: 5px;
+    font-size: 1.rem;
+}
+.home-text h1{
+    font-size: 40px;
+    padding: 10px;
+}
+
+.home-text a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  background:linear-gradient(#7f97ff,#3a3cae);
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.5s ease;
+  box-shadow:  inset 2px 2px #3a3cea;
+}
+.home-text a:hover{
+transform: scale(1.1);
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 13px #525669,-3px -3px 13px #5b79ff;
+    transition: transform 0.5s ease;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.image-card img{
+border-radius: 50%;
+margin: 20px 40px;
+}
+.about{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.all-discussion{
+    display: flex;
+}
+.video{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+   
+}
+.video iframe{
+    border-radius: 10px;
+    transition: transform 0.5s ease ;
+}
+.video iframe:hover{
+    transform: scale(1.1);
+}
+.button{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    background:linear-gradient(100deg,#434597,#1f3dc3);
+    padding: 8px 15px;
+    margin:10px 10px;
+}
+.unoder-list{
+    background-color: #002fff;
+    padding: 10px;
+}
+.unoder-list ul{
+    width: 700px;
+    margin-left:180px;
+    padding: 30px;
+    border: 1px solid black;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 13px #525669,-3px -3px 13px #5b79ff;
+}
+.unoder-list li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 100px;
+    font-size: 1.4rem;
+}
+.headline{
+   font-weight: 700;
+   border: none;
+}
+.unoder-list ul:hover{
+    background-color: #7f97ff;
+    transform: scale(1.1);
+}
+.table{
+    margin-left: 150px;
+    
+}
+table th ,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+}
